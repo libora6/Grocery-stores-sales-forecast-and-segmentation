@@ -5,7 +5,7 @@ NOTE: If you want to run the Alteryx workflows please rename the folders path on
 Task 1 - Define the number of clusters to be used to group the 85 existing stores into store format clusters
   Tools used on this Task: Alteryx and Tableau
   Files used on this Task (inputs and outputs): 
-    storesalesdata.csv
+		storesalesdata.csv
     Final Project - Task 1.yxmd
     Cluster_Solution_Task_1.xlsx
     K-Centroids Diagnostics Tool - Task 1 - Results.xlsx
