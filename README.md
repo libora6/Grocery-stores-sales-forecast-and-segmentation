@@ -37,4 +37,4 @@ Task 3 - Prepare a monthly forecast for produce sales for the full year of 2016 
     New_Stores_Produce_Sales_Forecast.yxdb
     Summarized Forecast - Tableau.xlsx
 
-The 3 Tasks are summarized on the Final Project Submission - André Neiva Liboreiro.pdf file
+The 3 Tasks are summarized on the Grocery-stores-sales-forecast-and-segmentation - Project Solution (GitHub).pdf file.
