@@ -1,0 +1,848 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 1 - Importing storesalesdata.csv</AnnotationText>
+          <DefaultAnnotationText>storesalesdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="Day" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="Month" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="Dry_Grocery" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="Dairy" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="Frozen_Food" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="Meat" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="Produce" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="Floral" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="Deli" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="Bakery" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+            <Field name="General_Merchandise" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storesalesdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="354" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Dry_Grocery]+[Dairy]+[Frozen_Food]+[Meat]+[Produce]+[Floral]+[Deli]+[Bakery]+[General_Merchandise]" field="Total_Sales" size="8" type="Double" />
+            <FormulaField expression="([Dry_Grocery]/[Total_Sales])*100" field="Dry_Grocery_%" size="8" type="Double" />
+            <FormulaField expression="([Dairy]/[Total_Sales])*100" field="Dairy_%" size="8" type="Double" />
+            <FormulaField expression="([Frozen_Food]/[Total_Sales])*100" field="Frozen_Food_%" size="8" type="Double" />
+            <FormulaField expression="([Meat]/[Total_Sales])*100" field="Meat_%" size="8" type="Double" />
+            <FormulaField expression="([Produce]/[Total_Sales])*100" field="Produce_%" size="8" type="Double" />
+            <FormulaField expression="([Floral]/[Total_Sales])*100" field="Floral_%" size="8" type="Double" />
+            <FormulaField expression="([Deli]/[Total_Sales])*100" field="Deli_%" size="8" type="Double" />
+            <FormulaField expression="([Bakery]/[Total_Sales])*100" field="Bakery_%" size="8" type="Double" />
+            <FormulaField expression="([General_Merchandise]/[Total_Sales])*100" field="General_Merc_%" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 4 - Creating Total_Sales field with the total sales per store per day</AnnotationText>
+          <DefaultAnnotationText>Total_Sales = [Dry_Grocery]+[Dairy]+[Frozen_Food]+[Meat]+[Produce]+[Floral]+[Del...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="138" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Dry_Grocery" selected="True" type="Double" size="8" />
+            <SelectField field="Dairy" selected="True" type="Double" size="8" />
+            <SelectField field="Frozen_Food" selected="True" type="Double" size="8" />
+            <SelectField field="Meat" selected="True" type="Double" size="8" />
+            <SelectField field="Produce" selected="True" type="Double" size="8" />
+            <SelectField field="Floral" selected="True" type="Double" size="8" />
+            <SelectField field="Deli" selected="True" type="Double" size="8" />
+            <SelectField field="Bakery" selected="True" type="Double" size="8" />
+            <SelectField field="General_Merchandise" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 2 - Changing data types</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1014" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storeinformation.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 10 - Input storeinformation.csv</AnnotationText>
+          <DefaultAnnotationText>storeinformation.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storeinformation.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storeinformation.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storeinformation.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storeinformation.csv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storeinformation.csv" type="V_String" />
+            <Field name="Type" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storeinformation.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="246" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Store" action="GroupBy" rename="Store" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Dry_Grocery" action="Sum" rename="Dry_Grocery" />
+            <SummarizeField field="Dairy" action="Sum" rename="Dairy" />
+            <SummarizeField field="Frozen_Food" action="Sum" rename="Frozen_Food" />
+            <SummarizeField field="Meat" action="Sum" rename="Meat" />
+            <SummarizeField field="Produce" action="Sum" rename="Produce" />
+            <SummarizeField field="Floral" action="Sum" rename="Floral" />
+            <SummarizeField field="Deli" action="Sum" rename="Deli" />
+            <SummarizeField field="Bakery" action="Sum" rename="Bakery" />
+            <SummarizeField field="General_Merchandise" action="Sum" rename="General_Merchandise" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Step 3 - Summarize by StoreID and Year and Sum the Food Segments to create the Percentage over Total Sales on the year per Food Segment ]]></AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="462" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Year] = "2015"</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Year</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-05-07 22:41:12</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2015</Operand>
+              <StartDate>2019-05-07 22:41:12</StartDate>
+              <EndDate>2019-05-07 22:41:12</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 5 - Filtering only 2015 data</AnnotationText>
+          <DefaultAnnotationText>[Year] = "2015"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings>
+        <Position x="534" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">Store=True,Year=True,Dry_Grocery=True,Dairy=True,Frozen_Food=True,Meat=True,Produce=True,Floral=True,Deli=True,Bakery=True,General_Merchandise=True,Total_Sales=True,Dry_Grocery_%=True,Dairy_%=True,Frozen_Food_%=True,Meat_%=True,Produce_%=True,Floral_%=True,Deli_%=True,Bakery_%=True,General_Merc_%=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 6 - Checking for Nulls and Outliers</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="618" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_14812_e20505ed552b4c7d9a22974e0345ba87_\Engine_11208_b86d2f4489c542d8ba8771ba32f89532_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="678" y="-18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_14812_e20505ed552b4c7d9a22974e0345ba87_\Engine_11208_b17974e4a21f492c84b886a566f57e77_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings>
+        <Position x="618" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="the fields">Dry_Grocery_% + Dairy_% + Frozen_Food_% + Meat_% + Produce_% + Floral_% + Deli_% + Bakery_% + General_Merc_%</Value>
+          <Value name="standardize">True</Value>
+          <Value name="z score">True</Value>
+          <Value name="unit interval">False</Value>
+          <Value name="k-means">True</Value>
+          <Value name="k-medians">False</Value>
+          <Value name="neural gas">False</Value>
+          <Value name="min clus">2</Value>
+          <Value name="max clus">9</Value>
+          <Value name="bootstrap rep">50</Value>
+          <Value name="num seeds">3</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\K-Centroids_Diagnostics.yxmc" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="618" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="the fields">Dry_Grocery_% + Dairy_% + Frozen_Food_% + Meat_% + Produce_% + Floral_% + Deli_% + Bakery_% + General_Merc_%</Value>
+          <Value name="standardize">True</Value>
+          <Value name="z score">True</Value>
+          <Value name="unit interval">False</Value>
+          <Value name="k-means">False</Value>
+          <Value name="k-medians">True</Value>
+          <Value name="neural gas">False</Value>
+          <Value name="min clus">2</Value>
+          <Value name="max clus">9</Value>
+          <Value name="bootstrap rep">50</Value>
+          <Value name="num seeds">3</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\K-Centroids_Diagnostics.yxmc" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings>
+        <Position x="618" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="the fields">Dry_Grocery_% + Dairy_% + Frozen_Food_% + Meat_% + Produce_% + Floral_% + Deli_% + Bakery_% + General_Merc_%</Value>
+          <Value name="standardize">True</Value>
+          <Value name="z score">True</Value>
+          <Value name="unit interval">False</Value>
+          <Value name="k-means">False</Value>
+          <Value name="k-medians">False</Value>
+          <Value name="neural gas">True</Value>
+          <Value name="min clus">2</Value>
+          <Value name="max clus">9</Value>
+          <Value name="bootstrap rep">50</Value>
+          <Value name="num seeds">3</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 7 - Viewing the Clustering results by different clustering models selection (even though the instructions notes says to use the K-Means model</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\K-Centroids_Diagnostics.yxmc" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="714" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_14812_e20505ed552b4c7d9a22974e0345ba87_\Engine_11208_93c961a7d0954ae9a4decbf8dce47590_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="714" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_14812_e20505ed552b4c7d9a22974e0345ba87_\Engine_11208_8245a081c10b4eed80be2c2cae8319f0_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="714" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_14812_e20505ed552b4c7d9a22974e0345ba87_\Engine_11208_9d231a7f04a348e280514c9a04324bf7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings>
+        <Position x="810" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="model name">Store Formats</Value>
+          <Value name="the fields">Dry_Grocery_% + Dairy_% + Frozen_Food_% + Meat_% + Produce_% + Floral_% + Deli_% + Bakery_% + General_Merc_%</Value>
+          <Value name="standardize">True</Value>
+          <Value name="z score">True</Value>
+          <Value name="unit interval">False</Value>
+          <Value name="k-means">True</Value>
+          <Value name="k-medians">False</Value>
+          <Value name="neural gas">False</Value>
+          <Value name="num clus">3</Value>
+          <Value name="num seeds">10</Value>
+          <Value name="plot points">True</Value>
+          <Value name="plot centroids">False</Value>
+          <Value name="max comp">2</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 8 - Using K-Means method to run and Analyze the Clustering Model</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="grp" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="out" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Sum_Dists" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\K-Centroids_Cluster_Analysis.yxmc" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="894" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_14812_e20505ed552b4c7d9a22974e0345ba87_\Engine_11208_b6eb848bc7e649798d0cc95ba4dd0e26_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1290" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Cluster" order="Ascending" />
+            <Field field="Store" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 12 - Ordering by Cluster and Store</AnnotationText>
+          <DefaultAnnotationText>Cluster - Ascending
+Store - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1158" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Store" selected="True" input="Left_" />
+                <SelectField field="Left_Cluster" selected="True" input="Left_" type="V_String" size="11" />
+                <SelectField field="Right_City" selected="True" input="Right_" />
+                <SelectField field="Right_State" selected="True" input="Right_" />
+                <SelectField field="Left_Year" selected="True" input="Left_" />
+                <SelectField field="Left_Total_Sales" selected="True" input="Left_" />
+                <SelectField field="Left_Dry_Grocery" selected="True" input="Left_" />
+                <SelectField field="Left_Dairy" selected="True" input="Left_" />
+                <SelectField field="Left_Frozen_Food" selected="True" input="Left_" />
+                <SelectField field="Left_Meat" selected="True" input="Left_" />
+                <SelectField field="Left_Produce" selected="True" input="Left_" />
+                <SelectField field="Left_Floral" selected="True" input="Left_" />
+                <SelectField field="Left_Deli" selected="True" input="Left_" />
+                <SelectField field="Left_Bakery" selected="True" input="Left_" />
+                <SelectField field="Left_General_Merchandise" selected="True" input="Left_" />
+                <SelectField field="Left_Dry_Grocery_." selected="True" rename="Dry_Grocery_Perc" input="Left_" />
+                <SelectField field="Left_Dairy_." selected="True" rename="Dairy_Perc" input="Left_" />
+                <SelectField field="Left_Frozen_Food_." selected="True" rename="Frozen_Food_Perc" input="Left_" />
+                <SelectField field="Left_Meat_." selected="True" rename="Meat_Perc" input="Left_" />
+                <SelectField field="Left_Produce_." selected="True" rename="Produce_Perc" input="Left_" />
+                <SelectField field="Left_Floral_." selected="True" rename="Floral_Perc" input="Left_" />
+                <SelectField field="Left_Deli_." selected="True" rename="Deli_Perc" input="Left_" />
+                <SelectField field="Left_Bakery_." selected="True" rename="Bakery_Perc" input="Left_" />
+                <SelectField field="Left_General_Merc_." selected="True" rename="General_Merc_Perc" input="Left_" />
+                <SelectField field="Right_Store" selected="False" rename="Right_Store" input="Right_" />
+                <SelectField field="Right_Address" selected="False" input="Right_" />
+                <SelectField field="Right_Zip" selected="True" input="Right_" />
+                <SelectField field="Right_Type" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 11 - Joining the result with storeinformation.csv to get city and state for each store</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1398" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||Cluster_Results_Task1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 13 - Output the data - cluster_solution_Task_1</AnnotationText>
+          <DefaultAnnotationText>Cluster_Solution_Task_1.xlsx
+Table=Cluster_Results_Task1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings>
+        <Position x="1002" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="clus name">Cluster</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 9 - Running the K-Means method on the rest of the data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Year" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Dry_Grocery" source="R-DATA:" type="Double" />
+            <Field name="Dairy" source="R-DATA:" type="Double" />
+            <Field name="Frozen_Food" source="R-DATA:" type="Double" />
+            <Field name="Meat" source="R-DATA:" type="Double" />
+            <Field name="Produce" source="R-DATA:" type="Double" />
+            <Field name="Floral" source="R-DATA:" type="Double" />
+            <Field name="Deli" source="R-DATA:" type="Double" />
+            <Field name="Bakery" source="R-DATA:" type="Double" />
+            <Field name="General_Merchandise" source="R-DATA:" type="Double" />
+            <Field name="Total_Sales" source="R-DATA:" type="Double" />
+            <Field name="Dry_Grocery_." source="R-DATA:" type="Double" />
+            <Field name="Dairy_." source="R-DATA:" type="Double" />
+            <Field name="Frozen_Food_." source="R-DATA:" type="Double" />
+            <Field name="Meat_." source="R-DATA:" type="Double" />
+            <Field name="Produce_." source="R-DATA:" type="Double" />
+            <Field name="Floral_." source="R-DATA:" type="Double" />
+            <Field name="Deli_." source="R-DATA:" type="Double" />
+            <Field name="Bakery_." source="R-DATA:" type="Double" />
+            <Field name="General_Merc_." source="R-DATA:" type="Double" />
+            <Field name="Cluster" source="R-DATA:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Append_Cluster.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="25" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="25" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="8" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="14" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="15" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="16" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="21" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="22" Connection="First Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Second Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Interactive" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Reports" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Reports" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Reports" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Reports" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Reports" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Final Project - Task 1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

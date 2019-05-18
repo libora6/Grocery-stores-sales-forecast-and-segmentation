@@ -1,0 +1,870 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="162" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 2 - Input Cluster_Solution_Task_1.xlsx</AnnotationText>
+          <DefaultAnnotationText>Cluster_Solution_Task_1.xlsx
+Table=`Cluster_Results_Task1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="255" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="V_String" />
+            <Field name="Cluster" size="255" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="V_String" />
+            <Field name="Year" size="255" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="V_String" />
+            <Field name="Total_Sales" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Dry_Grocery" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Dairy" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Frozen_Food" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Meat" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Produce" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Floral" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Deli" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Bakery" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="General_Merchandise" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Dry_Grocery_Perc" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Dairy_Perc" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Frozen_Food_Perc" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Meat_Perc" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Produce_Perc" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Floral_Perc" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Deli_Perc" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Bakery_Perc" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="General_Merc_Perc" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="Double" />
+            <Field name="Zip" size="255" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Cluster_Solution_Task_1.xlsx|||`Cluster_Results_Task1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="162" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 1 - Input storedemographicdata.csv</AnnotationText>
+          <DefaultAnnotationText>storedemographicdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="Age0to9" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="Age10to17" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="Age18to24" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="Age25to29" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="Age30to39" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="Age40to49" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="Age50to64" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="Age65Plus" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="EdLTHS" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="EdHSGrad" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="EdSomeCol" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="EdAssociate" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="EdBachelor" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="EdMaster" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="EdProfSchl" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="EdDoctorate" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz1Per" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz2Per" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz3Per" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz4Per" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz5PlusPer" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHIncU25K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc25Kto50K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc50Kto75K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc75Kto100K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc100Kto150K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc150Kto250K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc250KPlus" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="PopAsian" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="PopBlack" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="PopHispanic" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="PopMulti" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="PopNativeAmer" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="PopOther" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="PopPacIsl" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="PopWhite" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal0to100K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal100Kto200K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal200Kto300K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal300Kto400K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal400Kto500K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal500Kto750K" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal750KPlus" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+            <Field name="PopDens" size="254" source="File: C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\storedemographicdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="294" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Store" selected="True" input="Left_" />
+                <SelectField field="Right_Cluster" selected="True" input="Right_" />
+                <SelectField field="Left_Age0to9" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age10to17" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age18to24" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age25to29" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age30to39" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age40to49" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age50to64" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age65Plus" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdLTHS" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdHSGrad" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdSomeCol" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdAssociate" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdBachelor" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdMaster" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdProfSchl" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdDoctorate" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHSz1Per" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHSz2Per" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHSz3Per" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHSz4Per" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHSz5PlusPer" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHIncU25K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc25Kto50K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc50Kto75K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc75Kto100K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc100Kto150K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc150Kto250K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc250KPlus" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopAsian" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopBlack" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopHispanic" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopMulti" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopNativeAmer" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopOther" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopPacIsl" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopWhite" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal0to100K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal100Kto200K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal200Kto300K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal300Kto400K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal400Kto500K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal500Kto750K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal750KPlus" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopDens" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Right_Store" selected="False" rename="Right_Store" input="Right_" type="Double" size="8" />
+                <SelectField field="Right_City" selected="False" input="Right_" />
+                <SelectField field="Right_State" selected="False" input="Right_" />
+                <SelectField field="Right_Year" selected="False" input="Right_" />
+                <SelectField field="Right_Total_Sales" selected="False" input="Right_" />
+                <SelectField field="Right_Dry_Grocery" selected="False" input="Right_" />
+                <SelectField field="Right_Dairy" selected="False" input="Right_" />
+                <SelectField field="Right_Frozen_Food" selected="False" input="Right_" />
+                <SelectField field="Right_Meat" selected="False" input="Right_" />
+                <SelectField field="Right_Produce" selected="False" input="Right_" />
+                <SelectField field="Right_Floral" selected="False" input="Right_" />
+                <SelectField field="Right_Deli" selected="False" input="Right_" />
+                <SelectField field="Right_Bakery" selected="False" input="Right_" />
+                <SelectField field="Right_General_Merchandise" selected="False" input="Right_" />
+                <SelectField field="Right_Dry_Grocery_Perc" selected="False" input="Right_" />
+                <SelectField field="Right_Dairy_Perc" selected="False" input="Right_" />
+                <SelectField field="Right_Frozen_Food_Perc" selected="False" input="Right_" />
+                <SelectField field="Right_Meat_Perc" selected="False" input="Right_" />
+                <SelectField field="Right_Produce_Perc" selected="False" input="Right_" />
+                <SelectField field="Right_Floral_Perc" selected="False" input="Right_" />
+                <SelectField field="Right_Deli_Perc" selected="False" input="Right_" />
+                <SelectField field="Right_Bakery_Perc" selected="False" input="Right_" />
+                <SelectField field="Right_General_Merc_Perc" selected="False" input="Right_" />
+                <SelectField field="Right_Zip" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 3 - Joining tables to get Cluster value for the 85 stores</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings>
+        <Position x="414" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">Store=True,Age0to9=True,Age10to17=True,Age18to24=True,Age25to29=True,Age30to39=True,Age40to49=True,Age50to64=True,Age65Plus=True,EdLTHS=True,EdHSGrad=True,EdSomeCol=True,EdAssociate=True,EdBachelor=True,EdMaster=True,EdProfSchl=True,EdDoctorate=True,HHSz1Per=True,HHSz2Per=True,HHSz3Per=True,HHSz4Per=True,HHSz5PlusPer=True,HHIncU25K=True,HHInc25Kto50K=True,HHInc50Kto75K=True,HHInc75Kto100K=True,HHInc100Kto150K=True,HHInc150Kto250K=True,HHInc250KPlus=True,PopAsian=True,PopBlack=True,PopHispanic=True,PopMulti=True,PopNativeAmer=True,PopOther=True,PopPacIsl=True,PopWhite=True,HVal0to100K=True,HVal100Kto200K=True,HVal200Kto300K=True,HVal300Kto400K=True,HVal400Kto500K=True,HVal500Kto750K=True,HVal750KPlus=True,PopDens=True,Cluster=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Step 4 - Checking and removing fields with low variability, no logical use or high missing values ]]></AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="510" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_13424_49db37aadd8c4345983006610c26d9a9_\Engine_11208_b07be80add744a66aea1c86e5b72d1dd_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="510" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_13424_49db37aadd8c4345983006610c26d9a9_\Engine_11208_d5292e9198d244479daf7768fb4339a4_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings>
+        <Position x="426" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">80</Value>
+          <Value name="validation pct">20</Value>
+          <Value name="rand seed">3</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 5 - Creating Estimation, Validation and Holdout samples</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="138" y="426" width="196" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Note: In a real world scenario, you could use PCA to reduce the number of predictor variables. However, there is no need to do so in this project. You can leave all predictor variables in the model.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings>
+        <Position x="702" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">Random_Forest_Model</Value>
+          <Value name="Y Var">Cluster</Value>
+          <Value name="X Vars">Age0to9 + Age10to17 + Age18to24 + Age25to29 + Age30to39 + Age40to49 + Age50to64 + Age65Plus + EdLTHS + EdHSGrad + EdSomeCol + EdAssociate + EdBachelor + EdMaster + EdProfSchl + EdDoctorate + HHSz1Per + HHSz2Per + HHSz3Per + HHSz4Per + HHSz5PlusPer + HHIncU25K + HHInc25Kto50K + HHInc50Kto75K + HHInc75Kto100K + HHInc100Kto150K + HHInc150Kto250K + HHInc250KPlus + PopAsian + PopBlack + PopHispanic + PopMulti + PopNativeAmer + PopOther + PopPacIsl + PopWhite + HVal0to100K + HVal100Kto200K + HVal200Kto300K + HVal300Kto400K + HVal400Kto500K + HVal500Kto750K + HVal750KPlus + PopDens</Value>
+          <Value name="Num Trees">500</Value>
+          <Value name="Custom Num Vars">False</Value>
+          <Value name="Num Vars">3</Value>
+          <Value name="model.size">False</Value>
+          <Value name="total.nodes">100</Value>
+          <Value name="max.depth">10</Value>
+          <Value name="node.size">5</Value>
+          <Value name="replace">True</Value>
+          <Value name="samp.rate">100</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 7 - Run the Random_Forest_Model</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings>
+        <Position x="702" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">Decision_Tree_Model</Value>
+          <Value name="Y Var">Cluster</Value>
+          <Value name="X Vars">Age0to9 + Age10to17 + Age18to24 + Age25to29 + Age30to39 + Age40to49 + Age50to64 + Age65Plus + EdLTHS + EdHSGrad + EdSomeCol + EdAssociate + EdBachelor + EdMaster + EdProfSchl + EdDoctorate + HHSz1Per + HHSz2Per + HHSz3Per + HHSz4Per + HHSz5PlusPer + HHIncU25K + HHInc25Kto50K + HHInc50Kto75K + HHInc75Kto100K + HHInc100Kto150K + HHInc150Kto250K + HHInc250KPlus + PopAsian + PopBlack + PopHispanic + PopMulti + PopNativeAmer + PopOther + PopPacIsl + PopWhite + HVal0to100K + HVal100Kto200K + HVal200Kto300K + HVal300Kto400K + HVal400Kto500K + HVal500Kto750K + HVal750KPlus + PopDens</Value>
+          <Value name="use.weights">False</Value>
+          <Value name="select.weights">Age0to9</Value>
+          <Value name="cp">Auto</Value>
+          <Value name="select.type">False</Value>
+          <Value name="classification">True</Value>
+          <Value name="use.gini">True</Value>
+          <Value name="use.information">False</Value>
+          <Value name="regression">False</Value>
+          <Value name="min.split">20</Value>
+          <Value name="min.bucket">7</Value>
+          <Value name="usesurrogate.0">False</Value>
+          <Value name="usesurrogate.1">False</Value>
+          <Value name="usesurrogate.2">True</Value>
+          <Value name="total.correct">True</Value>
+          <Value name="percent.correct">False</Value>
+          <Value name="xval.folds">10</Value>
+          <Value name="max.depth">20</Value>
+          <Value name="max.bins">Default</Value>
+          <Value name="tree.plot">True</Value>
+          <Value name="Counts">False</Value>
+          <Value name="Proportions">True</Value>
+          <Value name="Branch Dist">True</Value>
+          <Value name="tree.inches">True</Value>
+          <Value name="tree.in.w">5.50</Value>
+          <Value name="tree.in.h">5.50</Value>
+          <Value name="tree.centimeters">False</Value>
+          <Value name="tree.cm.w">13.00</Value>
+          <Value name="tree.cm.h">14.95</Value>
+          <Value name="tree.graph.resolution">1x</Value>
+          <Value name="tree.pointsize">8</Value>
+          <Value name="prune.plot">False</Value>
+          <Value name="prune.inches">True</Value>
+          <Value name="prune.in.w">5.50</Value>
+          <Value name="prune.in.h">5.50</Value>
+          <Value name="prune.centimeters">False</Value>
+          <Value name="prune.cm.w">13.00</Value>
+          <Value name="prune.cm.h">14.95</Value>
+          <Value name="prune.graph.resolution">1x</Value>
+          <Value name="prune.pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 6 - Run the Decision_Tree_Model</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Decision_Tree.yxmc" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="798" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_13424_49db37aadd8c4345983006610c26d9a9_\Engine_11208_ffce731d1b504aa19ec1b7b218dea13f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="798" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_13424_49db37aadd8c4345983006610c26d9a9_\Engine_11208_1365c42caf094c30b5276a56b47fcc56_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="798" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_13424_49db37aadd8c4345983006610c26d9a9_\Engine_11208_5f116cf008a2455e9fe1c60c48cd0e05_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1050" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 9 - Joining the 3 models on the Model Comparison tool to compare one against the other</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings>
+        <Position x="1170" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="target.level" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 10 - Selecting the best model and output its equation</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="predictions">
+          <RecordInfo>
+            <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Decision_Tree_Model" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Random_Forest_Model" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Boosted_Model" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="error_measures">
+          <RecordInfo>
+            <Field name="Model" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Accuracy" source="R-DATA:" type="Double" />
+            <Field name="Accuracy_1" source="R-DATA:" type="Double" />
+            <Field name="Accuracy_2" source="R-DATA:" type="Double" />
+            <Field name="Accuracy_3" source="R-DATA:" type="Double" />
+            <Field name="F1" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Model Comparison.yxmc" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1290" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\libor\AppData\Local\Temp\Engine_13424_49db37aadd8c4345983006610c26d9a9_\Engine_11208_e89a061c9ff44754a6917f97b1a69c7c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings>
+        <Position x="702" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="model.name">Boosted_Model</Value>
+          <Value name="select.target">Cluster</Value>
+          <Value name="select.predictors">Store=False,Cluster=False,Age0to9=True,Age10to17=True,Age18to24=True,Age25to29=True,Age30to39=True,Age40to49=True,Age50to64=True,Age65Plus=True,EdLTHS=True,EdHSGrad=True,EdSomeCol=True,EdAssociate=True,EdBachelor=True,EdMaster=True,EdProfSchl=True,EdDoctorate=True,HHSz1Per=True,HHSz2Per=True,HHSz3Per=True,HHSz4Per=True,HHSz5PlusPer=True,HHIncU25K=True,HHInc25Kto50K=True,HHInc50Kto75K=True,HHInc75Kto100K=True,HHInc100Kto150K=True,HHInc150Kto250K=True,HHInc250KPlus=True,PopAsian=True,PopBlack=True,PopHispanic=True,PopMulti=True,PopNativeAmer=True,PopOther=True,PopPacIsl=True,PopWhite=True,HVal0to100K=True,HVal100Kto200K=True,HVal200Kto300K=True,HVal300Kto400K=True,HVal400Kto500K=True,HVal500Kto750K=True,HVal750KPlus=True,PopDens=True</Value>
+          <Value name="use.weights">False</Value>
+          <Value name="select.weights">Age0to9</Value>
+          <Value name="marginal.plots">False</Value>
+          <Value name="plot.min.importance">2.5</Value>
+          <Value name="type.distribution">False</Value>
+          <Value name="type.continuous">True</Value>
+          <Value name="dist.gaussian">True</Value>
+          <Value name="dist.laplace">False</Value>
+          <Value name="dist.t">False</Value>
+          <Value name="t.df">4</Value>
+          <Value name="type.count">False</Value>
+          <Value name="type.binomial">False</Value>
+          <Value name="dist.bernoulli">True</Value>
+          <Value name="dist.adaboost">False</Value>
+          <Value name="type.multinomial">False</Value>
+          <Value name="n.trees">4000</Value>
+          <Value name="assess.cv">True</Value>
+          <Value name="num.folds">5</Value>
+          <Value name="n.cores">1</Value>
+          <Value name="assess.test">False</Value>
+          <Value name="train.fraction">50.0</Value>
+          <Value name="assess.oob">False</Value>
+          <Value name="bag.fraction">50.0</Value>
+          <Value name="shrinkage">0.0020</Value>
+          <Value name="interaction.depth">1</Value>
+          <Value name="n.minobsinnode">10</Value>
+          <Value name="rand.seed">1</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 8 - Run the Boosted_Model</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1242" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\Random_Forest_Model_Result_Task_2.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Step 11 - Output the Random Forest model to use on the new stores data (Part 2)</AnnotationText>
+          <DefaultAnnotationText>Random_Forest_Model_Result_Task_2.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="378" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\libor\DataScience\Predictive Analysis for Business - Udacity\Final Project\New_Stores_Demographic_Data.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Extra Step - Output New Stores to use on the Score tool (Task 2 - Part 2)</AnnotationText>
+          <DefaultAnnotationText>New_Stores_Demographic_Data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="14" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="16" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Left" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Reports" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Interactive" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Estimation" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Estimation" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Validation" />
+      <Destination ToolID="31" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Models" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Estimation" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Reports" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Interactive" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Report" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Report" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Final Project - Task 2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
