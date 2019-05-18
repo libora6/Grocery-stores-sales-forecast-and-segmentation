@@ -22,6 +22,7 @@ Task 2 - Develop a model that predicts which cluster each of the new 10 stores f
     Final Project - Task 2 - Part 2.yxmd
     New_Stores_Demographic_Data.csv
     New_Stores_Clusters.yxdb
+    Bias Analysis for Predictive Models - Final Project.xlsx
 
 Task 3 - Prepare a monthly forecast for produce sales for the full year of 2016 for both existing and new stores.
   Tools used on this Task: Alteryx
@@ -34,5 +35,6 @@ Task 3 - Prepare a monthly forecast for produce sales for the full year of 2016 
     storesalesdata.csv
     New_Stores_Clusters.yxdb
     New_Stores_Produce_Sales_Forecast.yxdb
+    Summarized Forecast - Tableau.xlsx
 
 The 3 Tasks are summarized on the Final Project Submission - André Neiva Liboreiro.pdf file
